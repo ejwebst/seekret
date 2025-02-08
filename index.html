@@ -7,64 +7,93 @@
     <style>
         /* General Page Styling */
         body {
-            font-family: 'Courier New', monospace; /* Use a fixed-width font */
+            font-family: 'Courier New', monospace;
             text-align: center;
             background-color: #ffe6f2;
             color: #d63384;
             margin: 0;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            max-width: 80%;
         }
 
         /* ASCII Art Styling */
         .ascii-art {
-            font-size: min(16px, 1.2vw); /* Ensure it stays readable */
-            line-height: 1.2;
+            font-size: 10px;
+            line-height: 1.1;
             background: #ffe6f2;
-            padding: 20px;
-            border-radius: 20px;
+            padding: 10px;
+            border-radius: 10px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-            white-space: pre; /* Preserve ASCII format */
-            overflow: auto; /* Prevents text from breaking */
-            margin-bottom: 20px;
-            text-align: center;
-            align-items: center;
+            white-space: pre-wrap;
             display: flex;
-            flex-direction: column; 
+            justify-content: center;
             align-items: center;
-            text-align: center;
+            max-width: fit-content;
         }
-            
+
+        .ascii-art pre {
+            text-align: left;
+            margin: 0;
+        }
+
+        /* Button Styling */
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .button:hover {
+            background-color: #a0245e;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
     <div class="ascii-art">
         <pre>
-                          
-                                    .;;;, .;;;,                   .;;;, .;;;,
-                                .;;;,;;;;;,;;;;;,.;;;,       .;;;.,;;;;;,;;;;;,;;;.
-                               ;;;;xXXxXXxXXxXXxXXx;;;. .,. .;;;xXXxXXxXXxXXxXX;;;;;
-                           .,,.`xXX'             `xXXx,;;;;;,xXXx'            `XXx;;,,.
-                          ;;;;xXX'                  `xXXx;xXXx'                 `XXx;;;;
-                          `;;XX'                       `XXX'                      `XX;;'
-                         ,;;,XX                         `X'                        XX,;;,
-                         ;;;;XX,                                                  ,XX;;;;
-                          ``.;XX,                                                ,XX;,'' 
-                           ;;;;XX,                   Rachael,                 ,XX;;;; 
-                             ```.;XX,             Be My Valentine?           ,XX;,'''  
-                                ;;;;XX,                                    ,XX;;;;  
-                                 ```,;XX,                                ,XX;,'''  
-                                     ;;;;XX,                          ,XX;;;;  
-                                      ````,;XX,        -E <3       ,XX;, '''  
-                                          ;;;;;XX,              ,XX;;;;  
-                                           `````,;XX,        ,XX;,''''    
-                                                ;;;;;XX,  ,XX;;;;;  
-                                                 `````;;XX;;'''''  
-                                                      `;;;;'  
+             .;;;, .;;;,                   .;;;, .;;;,
+        .;;;,;;;;;,;;;;;,.;;;,       .;;;.,;;;;;,;;;;;,;;;.
+       ;;;;xXXxXXxXXxXXxXXx;;;. .,. .;;;xXXxXXxXXxXXxXX;;;;;
+   .,,.`xXX'             `xXXx,;;;;;,xXXx'            `XXx;;,,.
+  ;;;;xXX'                  `xXXx;xXXx'                 `XXx;;;;
+  `;;XX'                       `XXX'                      `XX;;'
+ ,;;,XX                         `X'                        XX,;;,
+ ;;;;XX,                                                  ,XX;;;;
+  ``.;XX,                                                ,XX;,'' 
+    ;;;;XX,                   Rachael,                 ,XX;;;; 
+     ```.;XX,             Be My Valentine?           ,XX;,'''  
+        ;;;;XX,                                    ,XX;;;;  
+         ```,;XX,                                ,XX;,'''  
+             ;;;;XX,                          ,XX;;;;  
+              ````,;XX,        -E <3       ,XX;, '''  
+                  ;;;;;XX,              ,XX;;;;  
+                   `````,;XX,        ,XX;,''''    
+                        ;;;;;XX,  ,XX;;;;;  
+                         `````;;XX;;'''''  
+                              `;;;;'  
         </pre>
     </div>
+
+    <!-- Buttons -->
+    <div class="button-container">
+        <button class="button" onclick="location.href='yes.html'">Yes</button>
+        <button class="button" onclick="location.href='no.html'">No</button>
+    </div>
+
 </body>
 </html>
