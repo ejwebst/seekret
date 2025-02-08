@@ -20,13 +20,6 @@
             min-height: 100vh;
         }
 
-        /* Title Styling */
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
-
         /* ASCII Art Styling */
         .ascii-art {
             font-size: 4vw; /* Scales with screen width */
@@ -41,35 +34,7 @@
             animation: pulse 1.5s infinite alternate;
         }
 
-        /* Text Below ASCII Art */
-        p {
-            font-size: 1.2em;
-        }
-
-        /* Button Link */
-        a {
-            color: #fff;
-            text-decoration: none;
-            background: #d63384;
-            padding: 12px 20px;
-            border-radius: 8px;
-            display: inline-block;
-            margin-top: 20px;
-            font-size: 1.2em;
-            transition: background 0.3s, transform 0.2s;
-        }
-
-        a:hover {
-            background: #b02167;
-            transform: scale(1.05);
-        }
-
         /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
         @keyframes pulse {
             from { transform: scale(1); }
             to { transform: scale(1.05); }
@@ -77,18 +42,13 @@
 
         /* Responsive Tweaks */
         @media (max-width: 600px) {
-            h1 { font-size: 1.8em; }
             .ascii-art { font-size: 5vw; } /* Increases size on small screens */
-            a { font-size: 1em; padding: 10px 15px; }
         }
     </style>
 </head>
 <body>
-    
     <div class="ascii-art">
         <pre>
-
-        
              .;;;, .;;;,                   .;;;, .;;;,
         .;;;,;;;;;,;;;;;,.;;;,       .;;;.,;;;;;,;;;;;,;;;.
        ;;;;xXXxXXxXXxXXxXXx;;;. .,. .;;;xXXxXXxXXxXXxXX;;;;;
@@ -97,17 +57,18 @@
   `;;XX'                       `XXX'                      `XX;;'
  ,;;,XX                         `X'                        XX,;;,
  ;;;;XX,                                                  ,XX;;;;
-  ``.;XX,                                                ,XX;,''
-    ;;;;XX,                   Rachael,                 ,XX;;;;
-     ```.;XX,             Be My Valentine?           ,XX;,'''
-        ;;;;XX,                                    ,XX;;;;
-         ```,;XX,                                ,XX;,'''
-             ;;;;XX,                          ,XX;;;;
-              ````,;XX,        -E <3       ,XX;, '''
-                  ;;;;;XX,              ,XX;;;;
+  ``.;XX,                                                ,XX;,'' 
+    ;;;;XX,                   Rachael,                 ,XX;;;; 
+     ```.;XX,             Be My Valentine?           ,XX;,'''  
+        ;;;;XX,                                    ,XX;;;;  
+         ```,;XX,                                ,XX;,'''  
+             ;;;;XX,                          ,XX;;;;  
+              ````,;XX,        -E <3       ,XX;, '''  
+                  ;;;;;XX,              ,XX;;;;  
                    `````,;XX,        ,XX;,''''    
-                        ;;;;;XX,  ,XX;;;;;
-                         `````;;XX;;'''''
-                              `;;;;'
-
+                        ;;;;;XX,  ,XX;;;;;  
+                         `````;;XX;;'''''  
+                              `;;;;'  
         </pre>
+    </div>
+</body>
