@@ -18,11 +18,12 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            max-width: 80%;
         }
 
         /* ASCII Art Styling */
         .ascii-art {
-            font-size: min(16px, 2vw); /* Ensure it stays readable */
+            font-size: min(12px, 1.2vw); /* Ensure it stays readable */
             line-height: 1.2;
             background: #fff;
             padding: 10px;
@@ -33,6 +34,10 @@
             overflow: auto; /* Prevents text from breaking */
             margin-bottom: 20px;
             animation: pulse 3s infinite alternate;
+            text-align: center;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
         }
 
         /* Animations */
