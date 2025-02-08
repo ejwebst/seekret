@@ -7,7 +7,7 @@
     <style>
         /* General Page Styling */
         body {
-            font-family: 'Swanky and Moo Moo', monospace;
+            font-family: 'Courier New', monospace; /* Use a fixed-width font */
             text-align: center;
             background-color: #ffe6f2;
             color: #d63384;
@@ -22,14 +22,15 @@
 
         /* ASCII Art Styling */
         .ascii-art {
-            font-size: 2vw; /* Scales with screen width */
-            line-height: 1;
+            font-size: min(16px, 2vw); /* Ensure it stays readable */
+            line-height: 1.2;
             background: #fff;
             padding: 10px;
             border-radius: 10px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
             display: inline-block;
-            white-space: pre;
+            white-space: pre; /* Preserve ASCII format */
+            overflow: auto; /* Prevents text from breaking */
             margin-bottom: 20px;
             animation: pulse 3s infinite alternate;
         }
@@ -38,11 +39,6 @@
         @keyframes pulse {
             from { transform: scale(1); }
             to { transform: scale(1.05); }
-        }
-
-        /* Responsive Tweaks */
-        @media (max-width: 500px) {
-            .ascii-art { font-size: 2vw; } /* Increases size on small screens */
         }
     </style>
 </head>
@@ -72,3 +68,4 @@
         </pre>
     </div>
 </body>
+</html>
