@@ -24,12 +24,33 @@
         from { transform: scale(1); }
         to { transform: scale(1.2); }
     }
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .heart-outline {
+        font-size:100px;
+        position: absolite;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: heartbeat 1.5s infinate alternate;
+        color: red
+        opacity: 0.8;
+    }
+      
+    .rach_pic {
+        width: 300px;
+        border-radius: 20px;
+    }
+          
   </style>
 </head>
 <body>
     <div class="message">Yay!!! 😁😁😁 </div>
     <div class="heart">❤️❤️❤️</div>
-    <img src="https://github.com/ejwebst/seekret/blob/main/RachPic.jpg?raw=true" alt="Rachpic" width="300">
+    <img src="https://github.com/ejwebst/seekret/blob/main/RachPic.jpg?raw=true" alt="Rachpic" class="rach-pic">
 
 </body>
 </html>
