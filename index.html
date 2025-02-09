@@ -41,7 +41,9 @@
 
         /* Button Styling */
         .button-container {
-            margin-top: 20px;
+            display: flex;
+            gap: 10px; /* Adjust spacing between buttons */
+            justify-content: center;
         }
 
         .button {
@@ -89,13 +91,14 @@
     </div>
 
     <!-- Buttons -->
-    <div>
-    <a href="yes.html">
-        <button style="font-size: 20px; padding: 10px; background-color: #d63384; color: #ffffff; border: none; border-radius: 10px; cursor: pointer;">Yes!</button>
-    </a><a href="no.html">
-        <button style="font-size: 20px; padding: 10px; background-color: #d63384; color: #ffffff; border: none; border-radius: 10px; cursor: pointer;">No!</button>
-    </a>
-</div>
+    
+
+    <div class="button-container">
+        <a href="yes.html"><button class="button">Yes!</button></a>
+        <a href="no.html"><button class="button">No</button></a>
+    </div>
+        
+    
 
 </body>
 </html>
